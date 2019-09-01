@@ -43,13 +43,11 @@ button:hover {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   background-color: #fff;
   color: #006b3c;
   font-family: 'Verdana', 'Arial', sans-serif;
   font-size: 0.75rem;
+  margin: 25px auto 0;
   padding: 20px;
 }
 
