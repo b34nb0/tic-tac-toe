@@ -78,8 +78,8 @@ footer {
   border-right: none;
 }
 
-.red {
-  color: #c23b22;
+.bold {
+  font-weight: bolder;
 }
 
 .score {

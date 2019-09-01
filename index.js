@@ -57,18 +57,18 @@ function checkWinners(){
     if(line === "XXX") {
       document.getElementById("heading").innerText = "PLAYER 1 wins!";
       document.getElementById("heading").classList.add("winner");
-      box1.classList.add("red");
-      box2.classList.add("red");
-      box3.classList.add("red");
+      box1.classList.add("bold");
+      box2.classList.add("bold");
+      box3.classList.add("bold");
       score1++;
       endGame();
 
     } else if(line === "OOO") {
       document.getElementById("heading").innerText = "PLAYER 2 wins!";
       document.getElementById("heading").classList.add("winner");
-      box1.classList.add("red");
-      box2.classList.add("red");
-      box3.classList.add("red");
+      box1.classList.add("bold");
+      box2.classList.add("bold");
+      box3.classList.add("bold");
       score2++;
       endGame();
     }
@@ -87,7 +87,7 @@ function checkDraw(){
     console.log("DRAW");
     document.getElementById("heading").innerText = "DRAW";
     document.getElementById("heading").classList.add("winner");
-    setTimeout(clearBoardAndHead, 500);
+    setTimeout(clearBoardAndHead, 1000);
   }
 }
 
@@ -97,7 +97,7 @@ function clearBoardAndHead(){
   boxes.forEach(function(box){
     box.innerText = "";
     box.classList.remove("checked");
-    box.classList.remove("red");
+    box.classList.remove("bold");
   });
   winner = false;
 }
@@ -111,7 +111,7 @@ function endGame(){
   document.querySelector(".score-1 p").innerText = score1;
   document.querySelector(".score-2 p").innerText = score2;
   // Set delay and clear heading and board
-  setTimeout(clearBoardAndHead, 500);
+  setTimeout(clearBoardAndHead, 1000);
   winner = true;
 }
 
@@ -126,6 +126,6 @@ function restartGame(){
   boxes.forEach(function(box){
     box.innerText = "";
     box.classList.remove("checked");
-    box.classList.remove("red");
+    box.classList.remove("bold");
   });
 }
