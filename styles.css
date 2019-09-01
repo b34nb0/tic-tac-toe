@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #006b3c;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px;
+  font-size: 4rem;
+  font-family: 'VT323', monospace;
+}
+
+.winner {
+  color: #ff9933;
+}
+
+.board {
+  display: flex;
+}
+
+table {
+  margin: 30px auto;
+}
+
+button {
+  font-family: 'Permanent Marker', sans-serif;
+  padding: 5px 10px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  border: 3px dashed #fff;
+}
+button:hover {
+  background-color: #fff;
+  color: #006b3c;
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  color: #006b3c;
+  font-family: 'Verdana', 'Arial', sans-serif;
+  font-size: 0.75rem;
+  padding: 20px;
+}
+
+.box {
+  border: 3px solid #fff;
+  width: 150px;
+  height: 150px;
+  margin: 0;
+  font-size: 5rem;
+  font-family: 'Permanent Marker', sans-serif;
+}
+
+/* Cursor changes to pointer when hovering over unchecked boxes */
+.box:not(.checked):hover {
+  cursor: pointer;
+}
+
+.box-top {
+  border-top: none;
+}
+.box-bottom {
+  border-bottom: none;
+}
+.box-left {
+  border-left: none;
+}
+.box-right {
+  border-right: none;
+}
+
+.red {
+  color: #c23b22;
+}
+
+.score {
+  margin: auto;
+  line-height: 1.5;
+  font-family: 'VT323', monospace;
+  font-size: 2rem;
+}
+
+.score p {
+  font-size: 5rem;
+}
